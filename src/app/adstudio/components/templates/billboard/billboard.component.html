@@ -1,0 +1,66 @@
+<div class="billboard">
+  <div class="type_1">
+    <div class="c-1">
+      <div class="text">
+        <p>
+          {{ obj.textoCriativo }}
+        </p>
+      </div>
+      <div
+        class="logo"
+        [style.backgroundImage]="'url(' + obj.logoUrl + ')'"
+      ></div>
+    </div>
+    <div class="c-2" [style.backgroundImage]="'url(' + obj.imageUrl + ')'">
+      <div class="image">
+        <button>{{ obj.cta }}</button>
+      </div>
+    </div>
+  </div>
+
+  <br />
+
+  <div class="type_2">
+    <div class="c-1" [style.backgroundImage]="'url(' + obj.imageUrl + ')'">
+      <div class="image">
+        <button>{{ obj.cta }}</button>
+      </div>
+    </div>
+    <div class="c-2">
+      <div class="text">
+        <p>
+          {{ obj.textoCriativo }}
+        </p>
+      </div>
+      <div
+        class="logo"
+        [style.backgroundImage]="'url(' + obj.logoUrl + ')'"
+      ></div>
+    </div>
+  </div>
+
+  <br />
+
+  <div class="type_3">
+    <div class="c-1">
+      <div class="text">
+        <p>
+          {{ obj.textoCriativo }}
+        </p>
+      </div>
+    </div>
+    <div class="c-2" [style.backgroundImage]="'url(' + obj.imageUrl + ')'">
+      <div class="image">
+        <button>{{ obj.cta }}</button>
+      </div>
+    </div>
+    <div class="c-3">
+      <div class="line"></div>
+      <div
+        class="logo"
+        [style.backgroundImage]="'url(' + obj.logoUrl + ')'"
+      ></div>
+      <div class="line"></div>
+    </div>
+  </div>
+</div>

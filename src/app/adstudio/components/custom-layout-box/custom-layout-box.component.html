@@ -1,0 +1,36 @@
+<div class="panel">
+  <app-billboard
+   [obj]="billboardObj"
+  ></app-billboard>
+
+  <br>
+
+  <div class="controls">
+
+    <label for="text-criativo">
+        Texto do criativo:
+    </label>
+    <textarea name="text-criativo" id="text-criativo"
+    [(ngModel)]="billboardObj.textoCriativo"
+    >
+    </textarea>
+    <span>{{billboardObj.textoCriativo.length}}</span>
+
+    <br>
+
+    <label for="cta">CTA:</label>
+    <input type="text" name="cta" id="cta" [(ngModel)]="billboardObj.cta">
+    <span>{{billboardObj.cta.length}}</span>
+
+    <br>
+
+    <label for="img">Imagem:</label>
+    <input type="file" id="images" accept="image/*" (change)="onSelectFile($event, 1)">
+
+    <br>
+
+    <label for="img">Logo:</label>
+    <input type="file" name="img" id="img" accept="image/*" (change)="onSelectFile($event, 2)">
+    
+  </div>
+</div>
