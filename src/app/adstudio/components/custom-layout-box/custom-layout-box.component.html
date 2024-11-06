@@ -32,5 +32,14 @@
     <label for="img">Logo:</label>
     <input type="file" name="img" id="img" accept="image/*" (change)="onSelectFile($event, 2)">
     
+    <br>
+
+    <label for="corP">Cor primária:</label>
+    <input type="color" name="corP" id="corP" [(ngModel)]="billboardObj.corP">
+
+    <br>
+
+    <label for="corS">Cor secundaria:</label>
+    <input type="color" name="corS" id="corS" [(ngModel)]="billboardObj.corS">
   </div>
 </div>

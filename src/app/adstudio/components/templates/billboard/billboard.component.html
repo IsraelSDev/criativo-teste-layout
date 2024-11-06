@@ -1,6 +1,6 @@
 <div class="billboard">
-  <div class="type_1">
-    <div class="c-1">
+  <div class="type_1" [style.backgroundColor]="obj.corS">
+    <div class="c-1" [style.backgroundColor]="obj.corP">
       <div class="text">
         <p>
           {{ obj.textoCriativo }}
@@ -13,20 +13,20 @@
     </div>
     <div class="c-2" [style.backgroundImage]="'url(' + obj.imageUrl + ')'">
       <div class="image">
-        <button>{{ obj.cta }}</button>
+        <button [style.backgroundColor]="obj.corP">{{ obj.cta }}</button>
       </div>
     </div>
   </div>
 
   <br />
 
-  <div class="type_2">
+  <div class="type_2" [style.backgroundColor]="obj.corS">
     <div class="c-1" [style.backgroundImage]="'url(' + obj.imageUrl + ')'">
-      <div class="image">
-        <button>{{ obj.cta }}</button>
+      <div class="image" >
+        <button [style.backgroundColor]="obj.corP">{{ obj.cta }}</button>
       </div>
     </div>
-    <div class="c-2">
+    <div class="c-2" [style.backgroundColor]="obj.corP">
       <div class="text">
         <p>
           {{ obj.textoCriativo }}
@@ -41,7 +41,7 @@
 
   <br />
 
-  <div class="type_3">
+  <div class="type_3" [style.backgroundColor]="obj.corP">
     <div class="c-1">
       <div class="text">
         <p>
@@ -51,16 +51,16 @@
     </div>
     <div class="c-2" [style.backgroundImage]="'url(' + obj.imageUrl + ')'">
       <div class="image">
-        <button>{{ obj.cta }}</button>
+        <button [style.backgroundColor]="obj.corP">{{ obj.cta }}</button>
       </div>
     </div>
     <div class="c-3">
-      <div class="line"></div>
+      <div class="line"  [style.backgroundColor]="obj.corS"></div>
       <div
         class="logo"
         [style.backgroundImage]="'url(' + obj.logoUrl + ')'"
       ></div>
-      <div class="line"></div>
+      <div class="line" [style.backgroundColor]="obj.corS"></div>
     </div>
   </div>
 </div>

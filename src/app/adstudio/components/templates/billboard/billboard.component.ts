@@ -13,6 +13,8 @@ export class BillboardComponent {
     imageUrl: '',
     logoUrl: '',
     textoCriativo: 'Texto do criativo aqui, dentro deste espaço, com até 68 caracteres.',
-    cta: 'Acesse agora'
+    cta: 'Acesse agora',
+    corP: '#fc560c',
+    corS: '#50201A'
   };
 }
